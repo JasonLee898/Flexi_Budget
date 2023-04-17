@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Personal_Profile">
+
+    <FrameLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+
+        tools:context=".Transaction">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/transaction_backbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:layout_margin="15dp"
+                app:srcCompat="@drawable/menu_icon" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="67dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Transaction"
+                android:layout_weight="1"
+                android:textColor="#000"
+                android:textSize="28dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Expense List"
+                android:paddingLeft="15dp"
+                android:textColor="#000"
+                android:textSize="23dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/elist_add"
+                android:layout_width="90dp"
+                android:layout_height="35dp"
+                android:background="#52A447"
+                android:text="Add"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:layout_gravity="right"
+                android:layout_marginRight="15dp"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/exRView"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="40dp"
+            android:layout_height="235dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Income List"
+                android:paddingLeft="15dp"
+                android:textColor="#000"
+                android:textSize="23dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/ilist_add"
+                android:layout_width="90dp"
+                android:layout_height="35dp"
+                android:background="#52A447"
+                android:text="Add"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:layout_gravity="right"
+                android:layout_marginRight="15dp"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/inRView"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_height="235dp" />
+
+    </LinearLayout>
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/white">
+
+        <include
+            layout="@layout/menu_page"/>
+    </RelativeLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

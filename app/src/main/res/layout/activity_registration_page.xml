@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegistrationPage">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/registration_backbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="#00000000"
+            app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00FDD7E4"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/app_logo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/app_logo" />
+
+        <TextView
+            android:layout_width="400dp"
+            android:layout_height="67dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Welcome New User"
+            android:textColor="#000"
+            android:textSize="34dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/registration_name"
+            android:layout_width="320dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="#FFFFFF"
+            android:hint="Name"
+            android:paddingLeft="15dp"
+            android:inputType="textPersonName"
+            android:textColor="#000"
+            android:textColorHint="#D9D9D9"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/registration_email"
+            android:layout_width="320dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="#FFFFFF"
+            android:hint="Email"
+            android:paddingLeft="15dp"
+            android:inputType="textEmailAddress"
+            android:textColor="#000"
+            android:textColorHint="#D9D9D9"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/registration_password"
+            android:layout_width="320dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="#FFFFFF"
+            android:hint="Password"
+            android:paddingLeft="15dp"
+            android:inputType="textPassword"
+            android:textColor="#000"
+            android:textColorHint="#D9D9D9"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/registration_confirm_password"
+            android:layout_width="320dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="#FFFFFF"
+            android:hint="Confirm Password"
+            android:paddingLeft="15dp"
+            android:inputType="textPassword"
+            android:textColor="#000"
+            android:textColorHint="#D9D9D9"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/registration_phone_number"
+            android:layout_width="320dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="#FFFFFF"
+            android:hint="+60123456789"
+            android:paddingLeft="15dp"
+            android:inputType="phone"
+            android:textColor="#000"
+            android:textColorHint="#D9D9D9"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:text="OTP:"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/enterOTPField"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:hint="OTP"
+                android:paddingLeft="15dp"
+                android:inputType="phone"
+                android:textColor="#000"
+                android:textColorHint="#D9D9D9"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/sendOtpButton"
+            android:layout_width="165dp"
+            android:layout_height="35dp"
+            android:layout_margin="10dp"
+            android:background="#00C04B"
+            android:gravity="center"
+            android:text="Send OTP"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/verifyOtpButton"
+                android:layout_width="165dp"
+                android:layout_height="35dp"
+                android:layout_margin="10dp"
+                android:background="#00C04B"
+                android:gravity="center"
+                android:text="Verify OTP"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/resendOtpButton"
+                android:layout_width="165dp"
+                android:layout_height="35dp"
+                android:layout_margin="10dp"
+                android:background="#00C04B"
+                android:gravity="center"
+                android:text="Resend OTP"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/Register_button"
+            android:layout_width="165dp"
+            android:layout_height="35dp"
+            android:layout_margin="10dp"
+            android:background="#00C04B"
+            android:gravity="center"
+            android:text="Register"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/registration_login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:text="Already have an account? Login"
+            android:textColor="#FF0000"
+            android:textSize="15sp" />
+
+
+    </LinearLayout>
+</FrameLayout>

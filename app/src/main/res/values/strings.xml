@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Flexi Budget</string>
+
+    <string-array name="items">
+        <item>Select Envelope</item>
+        <item>Saving</item>
+        <item>Food</item>
+        <item>Travel</item>
+        <item>Improve</item>
+        <item>Insurance</item>
+        <item>Free</item>
+    </string-array>
+
+    <string-array name="items1">
+        <item>Select Income</item>
+        <item>Salary</item>
+        <item>Bonus</item>
+    </string-array>
+</resources>
